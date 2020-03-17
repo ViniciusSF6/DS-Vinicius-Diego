@@ -1,0 +1,16 @@
+package metodo4;
+import java.util.Scanner;
+public class Retangulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		Calculo  calcularArea = new Calculo();
+		
+		System.out.println("Digite a altura do retangulo");
+		calcularArea.altura = in.nextDouble();
+		System.out.println("Digite a base do retangulo");
+		calcularArea.base = in.nextDouble();
+		System.out.println("o valor da area do retangulo é: " +calcularArea.calcularArea() );
+	}
+}
