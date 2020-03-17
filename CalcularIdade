@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class idade {
+	public static void main(String[]args){
+		Scanner in = new Scanner(System.in);
+		int resposta = 0,anoNasc,anoAtual,idade;
+		System.out.println("Digite o ano atual");
+		anoAtual = in.nextInt();
+		while (resposta < 2) {
+			System.out.println("Digite o ano de nascimento");
+			anoNasc = in.nextInt();
+			idade = anoAtual - anoNasc;
+			if (idade>=18){
+				System.out.println("Você tem "+idade+" e é maior de idade");
+			}else {
+				System.out.println("Você tem "+idade+" e é menor de idade");
+			}
+			System.out.println("");
+			System.out.println("Deseja continuar? (1 para continuar ou 2 para parar)");
+			resposta = in.nextInt();
+		}
+	}
+}
