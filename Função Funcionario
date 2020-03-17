@@ -1,0 +1,16 @@
+package metodo2;
+
+public class Funcionario1 {
+	double salarioBruto, salarioLiquido, imposto, valorImposto;
+	double salarioLiquido() {
+		valorImposto = salarioBruto*(imposto/100);
+		salarioLiquido = salarioBruto - valorImposto;
+		return salarioLiquido;
+	}
+	
+	double salarioAtual, aumento;
+	double aumentaSalario(){
+		salarioAtual = salarioLiquido + aumento;
+		return salarioAtual;
+	}
+}
