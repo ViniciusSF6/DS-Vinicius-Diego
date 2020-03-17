@@ -1,0 +1,24 @@
+package metodo;
+import java.util.Scanner;
+class Quadrado2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		Quadrado1  calcularArea = new Quadrado1();
+		
+		System.out.println("Digite a altura do 1º quadrado");
+		calcularArea.altura = in.nextDouble();
+		System.out.println("Digite a base do 1º quadrado");
+		calcularArea.base = in.nextDouble();
+		System.out.println("o valor da area do 1º quadrado é:" +calcularArea.calcularArea() );
+		
+		System.out.println();
+		
+		System.out.println("Digite a altura do 2º quadrado");
+		calcularArea.altura = in.nextDouble();
+		System.out.println("Digite a base do 2º quadrado");
+		calcularArea.base = in.nextDouble();
+		System.out.println("o valor da area do 2º quadrado é:" +calcularArea.calcularArea() );
+	}
+}
