@@ -1,0 +1,31 @@
+package metodo2;
+import java.util.Scanner;
+public class Funcionario {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		Funcionario1 calcularSalarioLiquido = new Funcionario1();
+		
+		System.out.println("Digite o salario bruto do pedro");
+		calcularSalarioLiquido.salarioBruto = in.nextDouble();
+		System.out.println("Digite a porcentagem do valor do imposto do pedro");
+		calcularSalarioLiquido.imposto = in.nextDouble();
+		System.out.println("Seu salario liquido do pedro é "+calcularSalarioLiquido.salarioLiquido() );
+		System.out.println("Digite o valor do aumento do pedro");
+		calcularSalarioLiquido.aumento = in.nextDouble();
+		System.out.println("O seu salario do pedro é: "+calcularSalarioLiquido.aumentaSalario() );
+		
+		System.out.println();
+		
+		System.out.println("Digite o salario bruto do vagner");
+		calcularSalarioLiquido.salarioBruto = in.nextDouble();
+		System.out.println("Digite a porcentagem do valor do imposto do vagner");
+		calcularSalarioLiquido.imposto = in.nextDouble();
+		System.out.println("Seu salario liquido do vagner é "+calcularSalarioLiquido.salarioLiquido() );
+		System.out.println("Digite o valor do aumento do vagner");
+		calcularSalarioLiquido.aumento = in.nextDouble();
+		System.out.println("O seu salario do vagner é: "+calcularSalarioLiquido.aumentaSalario() );
+	}
+
+}
