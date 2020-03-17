@@ -1,0 +1,24 @@
+package metodo6;
+import java.util.Scanner;
+public class Pessoa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner (System.in);
+		Classe calcular = new Classe ();
+		
+		System.out.println("Digite o ano de atual ");
+		calcular.anoAtual = in.nextInt();
+		System.out.println("Digite o ano de nascimento ");
+		calcular.anoNasc = in.nextInt();
+		
+		System.out.println("Digite o nome");
+		calcular.nome = in.next();
+		System.out.println("Digite o sobrenome");
+		calcular.sobrenome = in.next();
+		
+		System.out.println("A idade é: "+calcular.calcularIdade() );
+		System.out.println("O nome completo é: " +calcular.mostrarNomeCompleto() );
+	}
+
+}
