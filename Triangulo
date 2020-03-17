@@ -1,0 +1,15 @@
+package metodo3;
+import java.util.Scanner;
+public class Triangulo {
+	 public static void main (String [] args){
+		 Scanner in = new Scanner (System.in);
+		 Calculo CalcularArea = new Calculo ();
+		 System.out.println ("Digite a Base do Triângulo: ");
+		 CalcularArea.base = in.nextDouble();
+		 
+		 System.out.println("Digite a Altura do Triângulo: ");
+		 CalcularArea.altura = in.nextDouble();
+		 System.out.println("A area do triangulo é: "+CalcularArea.calcularArea() );
+	 }
+	 
+}
