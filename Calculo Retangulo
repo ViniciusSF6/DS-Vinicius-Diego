@@ -1,0 +1,10 @@
+package metodo4;
+
+public class Calculo {
+	
+	double area, base, altura;
+	double calcularArea (){
+		area = base * altura;
+		return area;
+  }
+}
