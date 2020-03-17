@@ -1,0 +1,16 @@
+package metodo6;
+
+public class Classe {
+	 String nome, sobrenome ,nomeC ;
+	 int anoNasc, idade, anoAtual;
+	 
+	 double calcularIdade(){
+		 idade = anoAtual - anoNasc;
+		 return idade;
+	 }
+	 
+	 String mostrarNomeCompleto(){
+		nomeC = nome +" " + sobrenome;
+		return nomeC;
+	 }
+}
